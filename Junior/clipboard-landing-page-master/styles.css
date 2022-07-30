@@ -1,0 +1,176 @@
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.dark{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+.light{
+    color: hsl(201, 11%, 66%);
+    font-size: 18px;
+}
+
+/* Header */
+#header{
+    text-align: center;
+}
+.logo{
+    background-image: url(images/bg-header-desktop.png);
+    background: cover;
+    height: 100%;
+    width: 100%;
+}
+.logo > img{
+    margin: 5% 0;
+}
+.headerContext > p{
+    width: 40%;
+    margin: 0 auto; 
+}
+.downloadbtn{
+    margin-top: 2%;
+}
+.downloadbtn > .ios , .downloadbtn > .mac{
+    margin-right: 1%;
+    border-radius: 1.563rem;
+    padding: 0.313rem 1.563rem; 
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+    border: 0;
+    box-shadow: 0px 2px 1px 0px #077a69;
+}
+.downloadbtn > .mac{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 2px 1px 0px #3e4bad;
+}
+
+/* Snippets */
+#snippets{
+    margin-top: 7%;
+    text-align: center;
+}
+#snippets > p{
+    width: 45%;
+    margin: 0 auto; 
+}
+
+/* Features */
+#features{
+    margin: 5% auto;
+}
+.fimage > img{
+    margin-left: -50px;
+}
+.text .f{
+    margin: 8% 25% 7% 25%;
+}
+
+/* access */
+#access{
+    text-align: center;
+}
+.atext > p{
+    width: 45%;
+    margin: 0 auto;
+}
+.atext > img{
+    margin: 5% auto;
+}
+/* supercharge */
+#supercharge{
+    text-align: center;
+}
+.superGrid{
+    padding: 5% 10% 10% 10%;
+}
+/* icons */
+#icons img{
+    margin: 0 5% 10% 5%;
+}
+/* clipboard */
+#clipboard{
+    text-align: center;
+}
+#clipboard > p{
+    width: 45%;
+    margin: 0 auto;
+}
+/* Footer */
+#footer{
+    margin-top: 5%;
+}
+.fsection, .f2section, .socialMedia{
+    color: hsl(201, 11%, 66%);
+}
+.fsection .col-4{
+    padding-top: 10%;
+}
+.fgrid{
+    background-color: whitesmoke;
+}
+.socialMedia{
+    padding-top: 3%;
+    padding-left: 15%;
+}
+.socialMedia > img{
+    margin-right: 5%;
+}
+
+/* Hover */
+.ios:hover , .mac:hover{
+    opacity: 0.8;
+}
+.contactUs:hover{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+
+/* Responsive */
+/* Mobile : 375px */
+@media screen and (max-width : 376px) {
+    .logo{
+        background-image: url(images/bg-header-mobile.png);
+        background: cover;
+    }
+    .headerContext > p{
+        width: 90%;
+        margin: 0 auto; 
+    }
+    .fimage > img{
+        margin-left:8%;
+        width: 300px;
+    }
+    .downloadbtn > .ios , .downloadbtn > .mac {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+    #snippets > p{
+        width: 90%; 
+    }
+    .atext > img{
+        width: 300px;
+    }
+    .atext > p{
+        width: 90%;
+    }
+    .text .f{
+        margin: 8% 9% 7% 9%;
+    }
+    #icons img{
+        margin: 0 29% 15% 29%;
+    }
+    #clipboard > p{
+        width: 90%;
+    }
+    .fimg > img{
+        transform: scale(0.4);
+        margin-left: 33%;
+    }
+    .fsection > .col-12 , .f2section > .col-12{
+        margin-bottom: 5%; 
+        text-align: center;
+    }
+    .socialMedia{
+        padding-left: 35%;
+    }
+}
